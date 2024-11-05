@@ -23,6 +23,7 @@ async function connect() {
     }
 }
 
+//app is listing on this port
 app.listen(PORT, ()=> {
     console.log(`Server at ${PORT}`);
 })
