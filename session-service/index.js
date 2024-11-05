@@ -4,6 +4,8 @@ const PORT = 5002;
 const amqp = require('amqplib')
 let channel , connection;
 
+app.use(express.json())
+
 amqp.connect();
 async function connect() {
     try {
